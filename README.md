@@ -1,4 +1,4 @@
-### HTTP-Client-Linux
+### HTTP-Client for POSIX
 
 ## Описание
 
