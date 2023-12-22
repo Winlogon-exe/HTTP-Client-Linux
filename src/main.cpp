@@ -68,7 +68,10 @@ void CheckESC()
 }
 
 int main() {
-    auto client = std::make_unique<HttpClient>("example.com", 80); 
+    std::cout << "Ввод URL для запросов (например, example.com): ";
+    std::string URL;
+    std::cin >> URL;
+    auto client = std::make_unique<HttpClient>(URL, 80); 
     ThreadData data = { std::move(client) };
 
     pthread_t requestThread, processThread;
